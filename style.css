@@ -8,18 +8,16 @@
 body, html {
   width: 100%;
   height: 100%;
-  /* 預設整體背景全透明 */
-  background-color: transparent; 
+  background-color: transparent;
   overflow: hidden;
   font-family: sans-serif;
 }
 
-/* 頂部標題列：設定 -webkit-app-region: drag 讓無邊框視窗可以被拖動 */
 .drag-bar {
   -webkit-app-region: drag;
   height: 30px;
-  background-color: rgba(50, 50, 50, 0.8);
-  color: white;
+  background-color: #4A3018; 
+  color: #A0E8AF; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +28,6 @@ body, html {
   transition: opacity 0.3s;
 }
 
-/* 當進入穿透模式時，讓標題列消失，畫面更乾淨 */
 body.click-through .drag-bar {
   opacity: 0;
 }
@@ -38,8 +35,8 @@ body.click-through .drag-bar {
 .image-container {
   width: 100%;
   height: calc(100% - 30px);
-  background-color: rgba(0, 0, 0, 0.2); /* 尚未載入圖片時的半透明底色 */
-  border: 2px dashed rgba(255, 255, 255, 0.5);
+  background-color: rgba(74, 48, 24, 0.4);
+  border: 2px dashed #A0E8AF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,12 +47,12 @@ body.click-through .drag-bar {
 }
 
 body.click-through .image-container {
-  border: none; /* 穿透模式隱藏邊框 */
+  border: none;
   background-color: transparent;
 }
 
 #drop-text {
-  color: white;
+  color: #A0E8AF;
   pointer-events: none;
 }
 
@@ -64,5 +61,5 @@ body.click-through .image-container {
   max-height: 100%;
   object-fit: contain;
   display: none;
-  opacity: 0.6; /* 核心：圖片預設半透明，可自行修改此數值 0.1~1.0 */
+  opacity: 0.6;
 }

@@ -32,6 +32,20 @@ body.click-through .drag-bar {
   opacity: 0;
 }
 
+/* 新增：讓拉桿區域可以被滑鼠操作 */
+.slider-container {
+  -webkit-app-region: no-drag; 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="range"] {
+  cursor: pointer;
+  width: 80px;
+  accent-color: #A0E8AF; /* 薄荷綠拉桿 */
+}
+
 .image-container {
   width: 100%;
   height: calc(100% - 30px);
@@ -61,5 +75,5 @@ body.click-through .image-container {
   max-height: 100%;
   object-fit: contain;
   display: none;
-  opacity: 0.6;
+  opacity: 0.6; /* 預設初始透明度 */
 }

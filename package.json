@@ -12,7 +12,8 @@
     "appId": "com.anshaer.refviewer",
     "productName": "RefViewer",
     "mac": {
-      "target": "dmg"
+      "target": "dmg",
+      "identity": null
     }
   },
   "devDependencies": {

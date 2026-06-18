@@ -5,6 +5,12 @@ const refImage = document.getElementById('ref-image');
 const dropText = document.getElementById('drop-text');
 const modeText = document.getElementById('mode-text');
 
+// 新增：抓取拉桿元素，並監聽數值變動
+const opacitySlider = document.getElementById('opacity-slider');
+opacitySlider.addEventListener('input', (e) => {
+  refImage.style.opacity = e.target.value;
+});
+
 ipcRenderer.on('toggle-mode', (event, isClickThrough) => {
   if (isClickThrough) {
     document.body.classList.add('click-through');

@@ -1,0 +1,12 @@
+{
+  "name": "transparent-ref-viewer",
+  "version": "1.0.0",
+  "description": "半透明置頂參考圖工具",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}

@@ -6,17 +6,13 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build:mac": "electron-builder --mac",
-    "build:win": "electron-builder --win"
+    "build:mac": "electron-builder --mac"
   },
   "build": {
     "appId": "com.anshaer.refviewer",
     "productName": "RefViewer",
     "mac": {
       "target": "dmg"
-    },
-    "win": {
-      "target": "nsis"
     }
   },
   "devDependencies": {

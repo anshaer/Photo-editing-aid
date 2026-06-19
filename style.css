@@ -32,9 +32,9 @@ body.click-through .drag-bar {
   opacity: 0;
 }
 
-/* 新增：語言選單的樣式 */
+
 #lang-select {
-  -webkit-app-region: no-drag; /* 確保可以點擊 */
+  -webkit-app-region: no-drag; 
   background-color: transparent;
   color: #A0E8AF;
   border: 1px solid rgba(160, 232, 175, 0.5);
@@ -46,8 +46,8 @@ body.click-through .drag-bar {
 }
 
 #lang-select option {
-  background-color: #4A3018;
-  color: #A0E8AF;
+  background-color: #d4ffd8;
+  color: #85e3ed;
 }
 
 .slider-container {
@@ -60,7 +60,7 @@ body.click-through .drag-bar {
 input[type="range"] {
   cursor: pointer;
   width: 80px;
-  accent-color: #A0E8AF;
+  accent-color: #90e4f5;
 }
 
 .window-controls {
@@ -72,7 +72,7 @@ input[type="range"] {
 .window-controls button {
   background: transparent;
   border: none;
-  color: #A0E8AF;
+  color: #71ccde;
   cursor: pointer;
   font-size: 14px;
   width: 24px;
@@ -96,8 +96,8 @@ input[type="range"] {
 .image-container {
   width: 100%;
   height: calc(100% - 35px);
-  background-color: rgba(74, 48, 24, 0.4);
-  border: 2px dashed #A0E8AF;
+  background-color: rgba(0, 255, 255, 0.2);
+  border: 2px dashed #9aeefc;
   display: flex;
   justify-content: center;
   align-items: center;

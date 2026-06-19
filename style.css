@@ -16,8 +16,8 @@ body, html {
 .drag-bar {
   -webkit-app-region: drag;
   height: 35px; 
-  background-color: #4A3018; 
-  color: #A0E8AF; 
+  background-color: #abf7d7; 
+  color: #00b1fc; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ body.click-through .drag-bar {
 #lang-select {
   -webkit-app-region: no-drag; 
   background-color: transparent;
-  color: #A0E8AF;
+  color: #00b1fc;
   border: 1px solid rgba(160, 232, 175, 0.5);
   border-radius: 4px;
   font-size: 12px;
@@ -46,8 +46,8 @@ body.click-through .drag-bar {
 }
 
 #lang-select option {
-  background-color: #d4ffd8;
-  color: #85e3ed;
+  background-color: #00b1fc;
+  color: #00b1fc;
 }
 
 .slider-container {
@@ -60,7 +60,7 @@ body.click-through .drag-bar {
 input[type="range"] {
   cursor: pointer;
   width: 80px;
-  accent-color: #90e4f5;
+  accent-color: #00b1fc;
 }
 
 .window-controls {
@@ -72,7 +72,7 @@ input[type="range"] {
 .window-controls button {
   background: transparent;
   border: none;
-  color: #71ccde;
+  color: #00b1fc;
   cursor: pointer;
   font-size: 14px;
   width: 24px;
@@ -85,7 +85,7 @@ input[type="range"] {
 }
 
 .window-controls button:hover {
-  background-color: rgba(160, 232, 175, 0.2);
+  background-color: rgba(171, 247, 215, 0.2);
 }
 
 #close-btn:hover {
@@ -96,8 +96,8 @@ input[type="range"] {
 .image-container {
   width: 100%;
   height: calc(100% - 35px);
-  background-color: rgba(0, 255, 255, 0.2);
-  border: 2px dashed #9aeefc;
+  background-color: rgba(171, 247, 215, 0.2);
+  border: 2px dashed #00b1fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ body.click-through .image-container {
 }
 
 #drop-text {
-  color: #A0E8AF;
+  color: #00b1fc;
   pointer-events: none;
   text-align: center; 
   line-height: 1.5; 

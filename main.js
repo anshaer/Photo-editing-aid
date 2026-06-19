@@ -1,4 +1,4 @@
-const { app, BrowserWindow, globalShortcut } = require('electron');
+const { app, BrowserWindow, globalShortcut, ipcMain } = require('electron');
 
 let mainWindow;
 let isClickThrough = false;
@@ -23,6 +23,15 @@ function createWindow() {
     isClickThrough = !isClickThrough;
     mainWindow.setIgnoreMouseEvents(isClickThrough, { forward: true });
     mainWindow.webContents.send('toggle-mode', isClickThrough);
+  });
+
+  // 新增：接收前端傳來的最小化與關閉指令
+  ipcMain.on('window-minimize', () => {
+    mainWindow.minimize();
+  });
+
+  ipcMain.on('window-close', () => {
+    mainWindow.close();
   });
 }
 

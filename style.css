@@ -15,7 +15,7 @@ body, html {
 
 .drag-bar {
   -webkit-app-region: drag;
-  height: 35px; /* 稍微加高一點點，讓按鈕更好按 */
+  height: 35px; 
   background-color: #4A3018; 
   color: #A0E8AF; 
   display: flex;
@@ -45,9 +45,8 @@ input[type="range"] {
   accent-color: #A0E8AF;
 }
 
-/* 新增：視窗按鈕區塊樣式 */
 .window-controls {
-  -webkit-app-region: no-drag; /* 絕對必要！讓按鈕可以被點擊 */
+  -webkit-app-region: no-drag; 
   display: flex;
   gap: 5px;
 }
@@ -71,7 +70,6 @@ input[type="range"] {
   background-color: rgba(160, 232, 175, 0.2);
 }
 
-/* 讓關閉按鈕滑鼠移過去時變紅色，符合使用者直覺 */
 #close-btn:hover {
   background-color: #ff4c4c;
   color: white;
@@ -89,6 +87,7 @@ input[type="range"] {
   border-bottom-right-radius: 8px;
   overflow: hidden;
   transition: border 0.3s;
+  cursor: pointer; /* 新增：讓還沒載入圖片時，滑鼠變成手指圖示 */
 }
 
 body.click-through .image-container {
@@ -99,6 +98,8 @@ body.click-through .image-container {
 #drop-text {
   color: #A0E8AF;
   pointer-events: none;
+  text-align: center; /* 新增：文字置中對齊 */
+  line-height: 1.5; /* 新增：增加行距 */
 }
 
 #ref-image {

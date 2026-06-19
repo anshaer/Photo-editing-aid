@@ -11,7 +11,7 @@ const langSelect = document.getElementById('lang-select');
 const opacityLabel = document.getElementById('opacity-label');
 const translations = {
   zh: {
-    modeNormal: '拖曳這裡移動視窗 (Ctrl+Shift+X 切換穿透)',
+    modeNormal: '拖曳這裡移動視窗 (⌘+Shift+X 切換穿透)',
     modeThrough: '穿透模式 (無法操作)',
     opacity: '透明度:',
     dropText: '將圖片拖曳至此<br>或點擊此處選擇圖片',
@@ -19,7 +19,7 @@ const translations = {
     closeTitle: '關閉'
   },
   en: {
-    modeNormal: 'Drag here to move (Ctrl+Shift+X to click-through)',
+    modeNormal: 'Drag here to move (⌘+Shift+X to click-through)',
     modeThrough: 'Click-Through Mode',
     opacity: 'Opacity:',
     dropText: 'Drop image here<br>or click to select',
@@ -27,7 +27,7 @@ const translations = {
     closeTitle: 'Close'
   },
   ja: {
-    modeNormal: 'ここをドラッグして移動 (Ctrl+Shift+X で透過)',
+    modeNormal: 'ここをドラッグして移動 (⌘+Shift+X で透過)',
     modeThrough: 'クリック透過モード',
     opacity: '不透明度:',
     dropText: 'ここに画像をドロップ<br>またはクリックして選択',

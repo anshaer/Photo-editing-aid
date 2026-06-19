@@ -2,15 +2,21 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>AuxiliaryReferenceImage</title>
+  <title>參考圖工具</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="drag-bar">
     <span id="mode-text">拖曳這裡移動視窗 (Cmd/Ctrl+Shift+X 切換穿透)</span>
     
+    <select id="lang-select">
+      <option value="zh">中文</option>
+      <option value="en">English</option>
+      <option value="ja">日本語</option>
+    </select>
+
     <div class="slider-container">
-      透明度: <input type="range" id="opacity-slider" min="0.1" max="1" step="0.1" value="0.6">
+      <span id="opacity-label">透明度:</span> <input type="range" id="opacity-slider" min="0.1" max="1" step="0.1" value="0.6">
     </div>
 
     <div class="window-controls">
@@ -21,7 +27,6 @@
 
   <div class="image-container" id="drop-zone">
     <input type="file" id="file-input" accept="image/*" style="display: none;">
-    
     <p id="drop-text">將圖片拖曳至此<br>或點擊此處選擇圖片</p>
     <img id="ref-image" src="" alt="">
   </div>

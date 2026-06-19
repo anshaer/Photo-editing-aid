@@ -4,9 +4,21 @@ const dropZone = document.getElementById('drop-zone');
 const refImage = document.getElementById('ref-image');
 const dropText = document.getElementById('drop-text');
 const modeText = document.getElementById('mode-text');
-
-// 新增：抓取拉桿元素，並監聽數值變動
 const opacitySlider = document.getElementById('opacity-slider');
+
+// 新增：抓取最小化與關閉按鈕
+const minimizeBtn = document.getElementById('minimize-btn');
+const closeBtn = document.getElementById('close-btn');
+
+// 新增：綁定點擊事件，發送指令給 main.js
+minimizeBtn.addEventListener('click', () => {
+  ipcRenderer.send('window-minimize');
+});
+
+closeBtn.addEventListener('click', () => {
+  ipcRenderer.send('window-close');
+});
+
 opacitySlider.addEventListener('input', (e) => {
   refImage.style.opacity = e.target.value;
 });
@@ -17,7 +29,7 @@ ipcRenderer.on('toggle-mode', (event, isClickThrough) => {
     modeText.innerText = '穿透模式 (無法操作)';
   } else {
     document.body.classList.remove('click-through');
-    modeText.innerText = '操作模式 (拖曳這裡移動視窗)';
+    modeText.innerText = '拖曳這裡移動視窗 (Cmd/Ctrl+Shift+X 切換穿透)';
   }
 });
 
